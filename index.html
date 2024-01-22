@@ -1,44 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Google manrope font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<!-- tailwind custom colors -->
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- tailwind custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
-  <style>
-    .font-manrope {
-        font-family: "Manrope", sans-serif;
-    }
-  </style>
+    </script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
-<body >
+
+<body class="font-manrope">
+
+
+    <div class="container mx-auto my-5 bg-white">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2  rounded-box w-52 text-[#424247] text-4xl font-normal">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost  text-black text-2xl font-extrabold">Hockey’s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href=""><span class="text-[#FF4240]">Home</span></a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+
+
+            </div>
+            <div class="space-x-6  navbar-end   ">
+
+                <img src="images/Frame.png" alt="">
+
+
+                <button class="btn btn-secondary  text-white bg-[#FF4240] font-semibold">Get Ticket</button>
+            </div>
+        </div>
+    </div>
     <header>
-        
+        <div class="container mx-auto my-24">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full mb-6">
+                    <img class=" w-full  rounded-2xl px-3" src="images/1.png" alt="">
+                    <div class="absolute flex  transform -translate-y-1/2 left-5 right-5 bottom-12 space-x-5">
+                        <a href="#slide4" class="btn btn-circle bg-blend-darken rounded-full">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-dark rounded-full">❯</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
+        <!-- professional section -->
+        <section class="container mx-auto">
+            <div>
+                <div class="text-center ">
+                    <h2 class="text-black text-5xl font-extrabold">Professional Hockeys Club</h2>
+                    <p class="text-dark text-xl font-medium mt-6">Dit amet consectetur. Condimentum dignissim adipiscing
+                        aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin. </p>
+                </div>
+              
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 bg-white my-20 items-center justify-center">
+                    <!--  facility 1-->
+                    <div class="grid justify-center items-center">
+                        <div class=" relative ">
+                            <img src="images/Group 9.png" alt=""  >
+                            <p class="absolute top-10 left-8 text-black text-3xl font-extrabold ">87%</p>
+                        </div>
+                        <h3 class="text-black text-2xl font-semibold">Prayer Facility</h3>
+                        <p class="text-dark text-xl font-medium">Amet consectetur <br> Condimentum .</p>
+                    </div>
+                    <!-- facility 2-->
 
+                   <div class="grid justify-center items-center ml-12 ">
+                    <div class=" relative ">
+                        <img src="images/Group 9 (1).png" alt="" >
+                        <p class="absolute top-10 left-8 text-black text-3xl font-extrabold ">95%</p>
+                    </div>
+                    <h3 class="text-black mb-3 text-2xl font-semibold">Experienced Coach</h3>
+                    <p class="text-dark text-xl font-medium">Amet consectetur <br> Condimentum .</p>
+                   </div>
+
+                    <!-- facility 3 -->
+
+                   <div class="grid justify-center items-center">
+                    <div class=" relative ">
+                        <img src="images/Group 9 (2).png" alt="" >
+                        <p class="absolute top-10 left-8 text-black text-3xl font-extrabold ">90%</p>
+                    </div>
+                    <h3 class="text-black text-2xl font-semibold">Senior Player</h3>
+                    <p class="text-dark text-xl font-medium">Amet consectetur <br> Condimentum .</p>
+                   </div>
+
+                    <!-- facility 4-->
+
+                  <div class="grid justify-center items-center">
+                    <div class=" relative ">
+                        <img src="images/Group 9 (3).png" alt="" >
+                        <p class="absolute top-10 left-8 text-black text-3xl font-extrabold ">80%</p>
+                    </div>
+                    <h3 class="text-black text-2xl font-semibold">Training Ground</h3>
+                    <p class="text-dark text-xl font-medium">Amet consectetur <br> Condimentum .</p>
+
+
+
+                  </div>
+                </div>
+
+            </div>
+
+
+            </div>
+            </div>
+        </section>
+        <!-- programs section -->
+        <section class="container mx-auto my-24">
+            <div class="">
+                <div class="text-center space-x-16 bg-white">
+                    <h2 class="text-black text-5xl font-extrabold">Program Sections</h2>
+                    <p class="text-dark text-xl font-medium mt-6 ">Dit amet consectetur. Condimentum dignissim
+                        adipiscing
+                        aliquam
+                        turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+                <div class="grid   gap-6 grid-cols-1 lg:grid-cols-2 mt-10 ">
+                    <div class=" ">
+                        <img src="images/2.png" alt="" class="w-full h-auto">
+                        <div>
+                            <h2>
+                                Junior Program
+                            </h2>
+
+                        </div>
+
+
+                    </div>
+                    <div class="">
+                        <img src="images/3.png" alt="" class="w-full h-auto">
+                    </div>
+                    <div class=" grid-cols-1 lg:col-span-2  ">
+                        <img src="images/4.png" alt="" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
